@@ -3,7 +3,7 @@ Cyclistic Case Study: Data cleaning in Excel and SQL
 */
 
 -- EXCEL
--- 1.	CreateD a column called “ride_length.” 
+-- 1.	Created a column called “ride_length.” 
 --      Calculated the length of each ride by subtracting the column “started_at” from the column “ended_at”
 --      formatted as [H]:MM:SS using Format > Cells >Time > 37:30:55.
 -- 2.	Filtered out and deleted rows with negative ride_lengths where ‘started_at > ended_at’
@@ -396,7 +396,7 @@ SET
                 WHEN day_of_week = '7' THEN 'Saturday' 
             END
 
--- Add ride length in minutes columns
+-- Add 'ride length in minutes' column
 
 ALTER TABLE yearly_data
 ADD ride_length_minutes numeric;
