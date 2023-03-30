@@ -1,6 +1,7 @@
 -- Average overall, member and casual ride lengths
 
 SELECT
+
 (SELECT AVG(ride_length)
 FROM yearly_data) AS AvgRideLength_Overall,
 
